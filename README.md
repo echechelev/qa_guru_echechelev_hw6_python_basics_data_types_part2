@@ -1,0 +1,1 @@
+# qa_guru_echechelev_hw6_python_basics_data_types_part2
