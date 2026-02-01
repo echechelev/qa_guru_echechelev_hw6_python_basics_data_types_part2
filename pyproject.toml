@@ -1,0 +1,33 @@
+[tool.black]
+line-length = 90
+target-version = ['py311']
+exclude = '''
+/(
+\.direnv
+|\.eggs
+|\.git
+|\.venv
+|\\env
+|\\.ipynb_checkpoints
+|\\.mypy_cache
+|\\.pytest_cache
+|\\.ruff_cache
+|\\.tox
+|\\.svn
+|\\.venv
+|\\.vscode|pypackages|_build|buck-out|build|dist|venv
+)/
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 90
+skip = [
+    "venv",
+    ".venv",
+    "env",
+    ".git",
+    "allure-results",
+    "allure-report",
+    ".pytest_cache",
+]
